@@ -1,0 +1,12 @@
+/ index.html
+
+<textarea id="output_area" style="width:100%; height:50%"></textarea>
+<button id="button" style="width:100%; height:50%" onclick="output()" >Button</button>
+<script type="text/javascript" src="multiply.js"></script>
+<script type='text/javascript'>
+document.getElementById("output_area").append("Script Started"+ "\n\n");
+  function output()
+  {
+    document.getElementById("output_area").append(Module.multiply(5,5)+ "\n\n");
+  }
+</script>
